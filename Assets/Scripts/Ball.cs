@@ -119,7 +119,9 @@ public class Ball : MonoBehaviour
             InterfazController.instance.perdervida();
             activada = false;
             gameObject.SetActive(false);
-             
+             pelotaLentaActiva = false;
+             destructora = false;
+           
         }
 
     }
