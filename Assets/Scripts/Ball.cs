@@ -9,7 +9,7 @@ public class Ball : MonoBehaviour
     [SerializeField] Vector3 direccion;
     [SerializeField] float velocidad = 2f;
     public int vidas = 3;
-    public TextMeshProUGUI textoVidas;
+   
     public float anguloMaximo = 0.7f;
     public Vector2 posicionInicial;
     public bool activada;
@@ -29,7 +29,7 @@ public class Ball : MonoBehaviour
     {
         StartCoroutine(ResetPelota());
         InterfazController.instance.setvidas(vidas);
-        ActualizarTextoVidas();
+       
         puntuacionController = PuntuacionController.Instance;
         destructora = false;
         pelotaLentaActiva = false;
@@ -66,7 +66,7 @@ public class Ball : MonoBehaviour
         }
         else if (collision.gameObject.tag == "Plataforma")
         {
-	    //Con este if, la pelota si tiene el power up de destructora, no rebota con las plataforma, solo las rompe al atraverslas. Si quieres que rebote siempre, simplemente quita el if y deja lo de dentro
+	    
 	    if(destructora == false)
             {
                 direccion.y = direccion.y * -1f;
@@ -83,10 +83,7 @@ public class Ball : MonoBehaviour
         }
     }
       
-    private void ActualizarTextoVidas()
-    {
-        // textoVidas.text = "Vidas: " + vidas; // Actualizar el texto que muestra el número de vidas
-    }
+    
 
     public IEnumerator ResetPelota()
     {

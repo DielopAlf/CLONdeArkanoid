@@ -1289,7 +1289,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2102086050}
         m_TargetAssemblyTypeName: MenuControl, Assembly-CSharp
-        m_MethodName: volver
+        m_MethodName: cerrarJuego
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

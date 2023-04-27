@@ -6,8 +6,8 @@ public class Plataforma : MonoBehaviour
 {
     public GameObject [] powerups;
     public int puntos = 10;
-    public int GolpesparaRomperse = 1; // Número de veces que se debe golpear la plataforma para que se rompa
-    private int GolpesDados = 0; // Número de veces que se ha golpeado la plataforma
+    public int GolpesparaRomperse = 1; 
+    private int GolpesDados = 0; 
     [Range(0,1)]
     public float probabilidad=0.1f;
     public void HitByBall(bool instantDestroy)

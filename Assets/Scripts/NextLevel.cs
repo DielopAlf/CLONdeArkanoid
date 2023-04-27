@@ -16,7 +16,7 @@ public class NextLevel : MonoBehaviour
 
     public void LoadA(string nivel)
     {
-    audioSource.PlayOneShot(interfazaudio);
+        audioSource.PlayOneShot(interfazaudio);
         SceneManager.LoadScene(nivel);
         
     }

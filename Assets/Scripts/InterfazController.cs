@@ -111,12 +111,7 @@ public class InterfazController : MonoBehaviour
         SceneManager.LoadScene("Menu");
         Time.timeScale = 1; // Restablecer la escala de tiempo del juego
     }
-    /* public void Ganar()
-     {
-         pantallaVictoria.SetActive(true);
-
-        // btnReiniciar.SetActive(true);
-     }*/
+   
 
     public void MostrarPantallaVictoria()
     {

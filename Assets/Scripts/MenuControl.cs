@@ -28,8 +28,9 @@ public class MenuControl : MonoBehaviour
 
     public void botonplay()
     {
-       audioSource.PlayOneShot(interfazaudio);
+       
         menuInicial.SetActive(false);
+        audioSource.PlayOneShot(interfazaudio);
         
 
         
