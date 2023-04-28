@@ -7,14 +7,14 @@ public class MenuControl : MonoBehaviour
 {
     public GameObject menuInicial;
     public AudioSource audioSource;
-     public AudioClip interfazaudio;
+    public AudioClip interfazaudio;
 
 
     void Start()
     {
         menuInicial.SetActive(true);
 
-        // Encuentra el componente AudioSource en el objeto que contiene el sonido
+       
         audioSource = GameObject.Find("controllador").GetComponent<AudioSource>();
     }
 
@@ -22,7 +22,7 @@ public class MenuControl : MonoBehaviour
     {
         Application.Quit();
 
-        // Reproduce el sonido
+        
        audioSource.PlayOneShot(interfazaudio);
     }
 
@@ -40,7 +40,7 @@ public class MenuControl : MonoBehaviour
     {
         menuInicial.SetActive(true);
 
-        // Reproduce el sonido
+        
          audioSource.PlayOneShot(interfazaudio);
     }
 }

@@ -11,7 +11,7 @@ public class ControladorVictoria : MonoBehaviour
     public static ControladorVictoria Instance;
     int plataformasRestantes;
     public Ball pelota;
-   // public AudioClip victory;
+    //public AudioClip victory;
     //public AudioSource audioSource;
 
     public void Awake()

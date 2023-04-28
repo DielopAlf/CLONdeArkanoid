@@ -107,9 +107,9 @@ public class InterfazController : MonoBehaviour
 
     public void VolverAlMenuPrincipal()
     {
-        // Cargar la escena del menú principal
+        
         SceneManager.LoadScene("Menu");
-        Time.timeScale = 1; // Restablecer la escala de tiempo del juego
+        Time.timeScale = 1; 
     }
    
 

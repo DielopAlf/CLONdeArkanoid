@@ -11,7 +11,7 @@ public class PelotaDestructora : MonoBehaviour
      public AudioSource audioSource;
     private void Start()
     {
-        // Destruir el power up después de un tiempo
+        
         Destroy(gameObject, tiempoVida);
     }
 
@@ -19,7 +19,7 @@ public class PelotaDestructora : MonoBehaviour
     {
        
 
-        // Mover el power up hacia arriba y abajo
+        
       transform.position +=  new Vector3(0, Time.deltaTime * speed*-1,0);
     }
 
