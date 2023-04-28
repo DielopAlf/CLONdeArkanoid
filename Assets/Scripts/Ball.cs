@@ -124,7 +124,7 @@ public class Ball : MonoBehaviour
     }
 
     public IEnumerator pelotalenta()
-{
+    {
     audioSource.PlayOneShot(powerUp);
     if (pelotaLentaActiva)
     {
@@ -139,7 +139,7 @@ public class Ball : MonoBehaviour
     
     velocidad = velocidadprevia;
     pelotaLentaActiva = false;
-}
+    }
 
 
     public  IEnumerator pelotadestructora()
